@@ -2,7 +2,7 @@
    "manifest_version": 3,
    "name": "WDW Schedule Scraper",
    "description": "This extension will scrape the WDW website for the current schedule and display it in a popup.",
-   "permissions": ["activeTab", "storage", "https://scheduleview.disney.com/*"],
+   "permissions": ["activeTab", "storage"],
    "version": "1.0", 
    "icons":  { 
       "16": "/images/icon16.png",
