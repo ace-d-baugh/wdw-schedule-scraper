@@ -1,0 +1,24 @@
+{
+   "manifest_version": 2,
+   "name": "WDW Schedule Scraper",
+   "description": "This extension will scrape the WDW website for the current schedule and display it in a popup.",
+   "version": "1.0", 
+   "icons":  { 
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+   },
+   "page_actions":  {
+      "default_icon": {
+      "16": "icon16-2.png",
+      "48": "icon48-2.png",
+      "128": "icon128-2.png"
+      }
+   },
+   "content_scripts": [
+      {
+         "matches": ["http://schedule.disney.com/*"],
+         "js": ["scraper-code.js"]
+      }
+   ]
+}
