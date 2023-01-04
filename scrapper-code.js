@@ -36,9 +36,11 @@ for (var i = 0; i < rawData.length; i++) {
 // Object class for each shift
 class Shift {
    constructor(startTime, endTime, shiftName) {
-      this.startTime = startTime;
-      this.endTime = endTime;
-      this.shiftName = shiftName;
+      this.subject = shiftName;
+      this.startDate = (startTime.getMonth() + 1) + '/' + startTime.getDate() + '/' + startTime.getFullYear();
+      this.startTime = startTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+      this.endDate = (endTime.getMonth() + 1) + '/' + endTime.getDate() + '/' + endTime.getFullYear();
+      this.endTime = endTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
    }
 }
 
@@ -73,10 +75,14 @@ function convertDateAndTime(dateString, timeString) {
 
 // Print shifts array
 for (var i = 0; i < shifts.length; i++) {
-   console.log('Shift Name:')
-   console.log(shifts[i].shiftName);
+   console.log('Subject:')
+   console.log(shifts[i].subject);
+   console.log('Start Date:')
+   console.log(shifts[i].startDate);
    console.log('Start Time:')
    console.log(shifts[i].startTime);
+   console.log('End Date:')
+   console.log(shifts[i].endDate);
    console.log('End Time:')
    console.log(shifts[i].endTime);
    console.log('*********************************************');
@@ -85,7 +91,7 @@ for (var i = 0; i < shifts.length; i++) {
 // Convert shifts to cvs format
 function convertToCSV(objArray) {
    let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
-   let str = '';
+   let str = 'Subject,Start Date,Start Time,End Date,End Time' + '\r';
 
    for (let i = 0; i < array.length; i++) {
       let line = '';
