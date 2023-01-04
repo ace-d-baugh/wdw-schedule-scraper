@@ -1,0 +1,25 @@
+.calendar {
+	background-color: midnightblue !important;
+	color: white;
+}
+
+.page {
+	background-color: midnightblue !important;
+	color: white;
+}
+
+.outer-modal-container {
+	background-color: midnightblue !important;
+	color: white;
+}
+
+.mwl-calendar-container {
+   background-color: midnightblue !important;
+   color: white;
+}
+
+.weekday-title, .cal-week-header {
+   background-color: gold !important;
+   color: black !important;
+   border-radius: 5px;
+}
