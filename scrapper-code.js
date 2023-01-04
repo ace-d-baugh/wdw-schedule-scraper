@@ -28,8 +28,6 @@ for (var i = 0; i < rawData.length; i++) {
          addShift(startAndEndTimes[0], startAndEndTimes[1], shiftName);
       }
 
-   } else {
-      console.log("No Shift");
    }
 }
 
@@ -73,21 +71,6 @@ function convertDateAndTime(dateString, timeString) {
    return [startTime, endTime];
 }
 
-// Print shifts array
-for (var i = 0; i < shifts.length; i++) {
-   console.log('Subject:')
-   console.log(shifts[i].subject);
-   console.log('Start Date:')
-   console.log(shifts[i].startDate);
-   console.log('Start Time:')
-   console.log(shifts[i].startTime);
-   console.log('End Date:')
-   console.log(shifts[i].endDate);
-   console.log('End Time:')
-   console.log(shifts[i].endTime);
-   console.log('*********************************************');
-}
-
 // Convert shifts to cvs format
 function convertToCSV(objArray) {
    let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
@@ -104,6 +87,7 @@ function convertToCSV(objArray) {
    return str;
 }
 
-
 // Copy shifts array to clipboard
 copy(convertToCSV(shifts));
+
+alert("Shifts copied to clipboard");
