@@ -5,15 +5,15 @@
    "permissions": ["activeTab", "storage"],
    "version": "1.0", 
    "icons":  { 
-      "16": "/images/icon16.png",
-      "48": "/images/icon48.png",
-      "128": "/images/icon128.png"
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
    },
    "content_scripts": [
       {
-         "matches": ["https://scheduleview.disney.com/"],
-         "css": ["css/WDW_Schedule_Scraper.css"],
-         "js": ["/scraper-code.js"]
-      }
+			"matches": ["https://scheduleview.disney.com/"],
+			"css": ["css/WDW_Schedule_Scraper.css"],
+			"js": ["scraper-code.js"]
+		}
    ]
 }

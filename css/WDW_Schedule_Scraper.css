@@ -1,25 +1,67 @@
-.calendar {
-	background-color: midnightblue !important;
-	color: white;
+:root {
+	--page-background-color: black;
+	--content-color: midnightblue;
+	--content-font-color: white;
+	--header-color: gold;
+	--header-font-color: var(--content-color);
+	--header-icon-color: var(--content-color);
+	--link-color: var(--header-color);
 }
 
-.page {
-	background-color: midnightblue !important;
-	color: white;
+/* Main background color */
+body.app {
+	background-color: var(--page-background-color) !important;
 }
 
-.outer-modal-container {
-	background-color: midnightblue !important;
-	color: white;
+/* Background and text colors of the content area */
+.navbar-container,
+.white-pane,
+.order-0,
+.order-1,
+.order-2,
+.outer-modal-container,
+.container,
+dis-sticky-header > dis-sticky {
+	background-color: var(--content-color) !important;
+	color: var(--content-font-color) !important;
 }
 
-.mwl-calendar-container {
-   background-color: midnightblue !important;
-   color: white;
+/* Link Colors */
+.calendar-future-requests-label {
+	color: gold !important;
 }
 
-.weekday-title, .cal-week-header {
-   background-color: gold !important;
-   color: black !important;
-   border-radius: 5px;
+/* Background and text colors of the header area */
+.weekday-title,
+.cal-week-header {
+	background-color: var(--header-color) !important;
+	color: var(--header-font-color) !important;
+	border-radius: 10px;
+}
+
+/* Color of icons on header-color background */
+.printable-schedule-icon {
+	color: var(--header-icon-color) !important;
+}
+
+/* Color of icons on content-color background */
+.wm-Icon_Notification_Bell,
+.calendar-help-icon,
+i {
+	color: var(--link-color) !important;
+}
+
+/* Added a text shadow for fonts */
+.ui-overlay-a,
+.ui-page-theme-a,
+.ui-page-theme-a,
+.ui-panel-wrapper {
+	text-shadow: 0 0 0 var(--link-color) !important;
+}
+
+/* No underlines */
+.cal-row-head,
+.calendar-button-row hr,
+dis-sticky {
+	border-color: transparent !important;
 }
