@@ -4,7 +4,7 @@
 
 ## Description
 ### Reason
-There used to be an app that would easily graqb schedules from the WDW Shedule app. With the new security in place this is nigh impossible. This app intends to replace the old one and be used on chrome browsers to add schedules to a google calendar with a simple button press.
+There used to be an app that would easily grab schedules from the WDW Schedule app. With the new security in place this is nigh impossible. This app intends to replace the old one and be used on chrome browsers to add schedules to a google calendar with a simple button press.
 
 ### Functionality
 - Grabs schedule information from secure website after you have logged in

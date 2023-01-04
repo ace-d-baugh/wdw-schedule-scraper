@@ -71,4 +71,33 @@ function convertDateAndTime(dateString, timeString) {
    return [startTime, endTime];
 }
 
-console.log(shifts);
+// Print shifts array
+for (var i = 0; i < shifts.length; i++) {
+   console.log('Shift Name:')
+   console.log(shifts[i].shiftName);
+   console.log('Start Time:')
+   console.log(shifts[i].startTime);
+   console.log('End Time:')
+   console.log(shifts[i].endTime);
+   console.log('*********************************************');
+}
+
+// Convert shifts to cvs format
+function convertToCSV(objArray) {
+   let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
+   let str = '';
+
+   for (let i = 0; i < array.length; i++) {
+      let line = '';
+      for (let index in array[i]) {
+         if (line != '') line += ','
+         line += array[i][index];
+      }
+      str += line + '\r';
+   }
+   return str;
+}
+
+
+// Copy shifts array to clipboard
+copy(convertToCSV(shifts));
