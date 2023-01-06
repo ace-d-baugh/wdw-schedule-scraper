@@ -91,5 +91,5 @@ setTimeout(function () {
 	// Copy shifts array to clipboard
 	navigator.clipboard.writeText(convertToCSV(shifts));
 
-	alert('Shifts copied to clipboard');
+	alert('All Shifts copied to clipboard \n Please paste your shifts into a new .csv file and save it as "shifts.csv" \n Then upload it to the Google Calendar Importer');
 }, 5000);
