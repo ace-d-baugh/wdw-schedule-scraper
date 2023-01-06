@@ -25,7 +25,7 @@ There used to be an app that would easily grab schedules from the WDW Schedule a
 
 ## How to use
 
-### Installation
+### How to Install this Extension (Desktop Only)
 - Download source code into a new folder
 - Open Google Chrome 
 - Select the three (3) dots icon from the top right of the browser.
@@ -41,4 +41,22 @@ There used to be an app that would easily grab schedules from the WDW Schedule a
 - Feel free to play with the CSS to your liking. Once you are done, you MUST refresh the extension located in the settings of the browser.
 - Use Chrome Dev Tools to play around before committing to changing the code. 
 
-### Add schedule to Google Calendar
+### How to add schedule to Google Calendar
+#### Save Schedule as a CSV file
+- Install the WDW Schedule Scraper extension
+- Go to https://scheduleview.disney.com
+  - *Warning* If your Schedule page is not a different color
+  - installation failed and try installing it again
+- Acknowledge the Alert on the page and select the "For Cast Mobile: Click Here"
+- Login to your Disney Account if needed
+- Acknowledge the Alert on the page
+- Open a new note in notepad.exe on your computer
+- Paste the schedule into the document
+  - Ctrl-V to paste the schedule
+  - or
+  - Go to Edit in the menu and select paste
+- Go to File in the menu and select Save As...
+- Save file as "Schedule.csv" with the quotes around it.
+
+
+#### Import CSV to Google Calendar
