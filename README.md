@@ -53,10 +53,26 @@ There used to be an app that would easily grab schedules from the WDW Schedule a
 - Open a new note in notepad.exe on your computer
 - Paste the schedule into the document
   - Ctrl-V to paste the schedule
-  - or
+  - **OR**
   - Go to Edit in the menu and select paste
 - Go to File in the menu and select Save As...
 - Save file as "Schedule.csv" with the quotes around it.
 
 
 #### Import CSV to Google Calendar
+- Log into or create a new Google Calendar
+  - At the moment, if you are currently using Google Calendar for your main calendar, we recommend you create a new Google Calendar under a different account as you will need to clear and delete all existing events from your Google Calendar in order to import new shifts. The other option is to delete each up coming shift from your Google Calendar before importing any new shifts as there will be duplicates created every time you import a new schedule
+- Delete all existing future shifts from your Google Calendar
+  - Select the shift you want to delete and select the trash icon to delete
+  - **OR**
+  - Select the Gear icon from the top menu and select "Settings"
+  - In the Left Panel, select the calendar and scroll to the bottom of the page
+  - Under the "Remove Calendar", select the "Delete" button. (This will remove all shifts and events from the calendar)
+  - Select "Permanently delete" from the popup
+- Select the "Import & Export" link from the left side panel of the page
+- Under "Import", select "Select file from your computer" and find the "Schedule.scv" file on your computer and open it
+- Select the "Import" button and then go back to your calendar to view it
+
+#### ***Optional*** Share you calendar with your main calendar
+ - If this is not your main calendar that you use for all other events, you can share this calendar to be seen in you main calendar
+ - Look up how to share your calendar with other calendars on Google and follow those steps
