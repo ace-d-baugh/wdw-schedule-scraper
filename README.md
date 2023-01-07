@@ -35,7 +35,7 @@ There used to be an app that would easily grab schedules from the WDW Schedule a
 - Select "Load unpacked" 
 - Locate and select the new folder with the source code in it
 - Open https://scheduleview.disney.com in another tab
-- Sign in and enjoy the new colour scheme
+- Sign in and enjoy the new color scheme
   
 ### CSS Alterations
 - Feel free to play with the CSS to your liking. Once you are done, you MUST refresh the extension located in the settings of the browser.
@@ -56,7 +56,7 @@ There used to be an app that would easily grab schedules from the WDW Schedule a
   - ** *OR* **
   - Go to Edit in the menu and select paste
 - Go to File in the menu and select Save As...
-- Save file as "Schedule.csv" with the quotes around it.
+- Save file as "shifts.csv" with the quotes around it.
 
 
 #### Import CSV to Google Calendar
@@ -70,7 +70,7 @@ There used to be an app that would easily grab schedules from the WDW Schedule a
   - Under the "Remove Calendar", select the "Delete" button. (This will remove all shifts and events from the calendar)
   - Select "Permanently delete" from the popup
 - Select the "Import & Export" link from the left side panel of the page
-- Under "Import", select "Select file from your computer" and find the "Schedule.scv" file on your computer and open it
+- Under "Import", select "Select file from your computer" and find the "shifts.scv" file on your computer and open it
 - Select the "Import" button and then go back to your calendar to view it
 
 #### *** *Optional* *** Share you calendar with your main calendar
